@@ -1,0 +1,194 @@
+@font-face {
+        font-family: Ubuntu;
+        src: url('../fonts/Ubuntu.ttf');
+      }
+html
+{
+	font-family: Ubuntu;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+}
+body
+{
+	margin:0;
+	background-color: black;
+	font-size: 14px;
+    line-height: 18px;
+    overflow-y: scroll;
+	color: #292f33;
+}
+html, body, #doc
+{
+	height:100%;
+}
+div 
+{
+    display: block;
+}
+#doc
+{
+	background-color: #e1e8ed;
+	width: 1903px;
+}
+.header-wrapper
+{
+	height: 120px;
+	width: 100%;
+}
+.header-slide
+{
+	height: 210px;
+    transition: height 300ms linear;
+	width: 100%;
+}
+.header-image
+{
+	background-image: url('../img/linear.jpg');
+	background-size: 100%;
+	background-position: center;
+	position: absolute;
+	width: 100%;
+}
+.header-view
+{
+	color: #fff;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: right;
+    width: 1195px;
+	position: relative;
+	top: 10px;
+	height: 250px;
+	width: 100%;
+}
+a
+{
+	    color: white;
+		text-decoration: none;
+		background: transparent;
+}
+h1,h2
+{
+	text-rendering: optimizeLegibility;
+	margin: 0;
+}
+h2{
+	display: block;
+	 
+	-webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	    font-size: 22px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.logo
+{
+	top: 10px;
+	color: #fff;
+    font-size: 30px;
+    transition: top 300ms linear;
+	position: relative;
+    float: left;
+	background: transparent;
+    display: inline-block;
+    font-style: normal;
+    vertical-align: baseline;
+}
+.logo:before
+{
+	content: "|";
+}
+.logo:after, .logo:before
+{
+	display: block;
+    font-family: "rosettaicons";
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+.logo:after
+{
+	content: "|";
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.Page-Content
+{
+	position: relative;
+    text-align: center;
+    transition: top 300ms linear;
+    width: 680px;
+    margin: 0 auto;
+}
+.Page-Content-Header
+{
+	color: #fff;
+    font-weight: 200;
+    line-height: 48px;
+    margin-bottom: -5px;
+    font-size: 32px;
+}
+.Page-Content-Sub
+{
+	color: #fff;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 28px;
+    opacity: .7;
+    -ms-filter: "alpha(opacity=70)";
+    transition: opacity 300ms linear;
+	display: block;
+	height: 68px;
+}
+.Navigation
+{
+	margin-left: 0px;
+	background-color: white;
+	color: black;
+	width: 100%;
+}
+.Navigation-Sub
+{
+	text-align: left;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+button{
+	padding: 5px 50px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-left: 0.5px solid silver;
+  border-right: 0px;
+  border-radius: 0px 0px 0px;
+  border-top : 0px;
+  border-bottom: 0px;
+  transition: all .2s linear;
+  height: 60px;	
+}
+	button:hover{
+	background-color: white; 
+	border-bottom: 5px solid skyblue;
+	transition: all .2s linear;
+	color: orange;  
+	
+	}
+	button:active{
+		transform: translateY(0px);
+		box-shadow: 0px 5px 20px red;
+		outline: none;
+		border: none;
+	}

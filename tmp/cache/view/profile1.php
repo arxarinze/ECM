@@ -1,0 +1,32 @@
+<?php
+require '../controller/c_log.php';
+echo '<profile>';
+echo "<center>";
+$pa = new db();
+$db = $pa->connect_db();
+$result = $db->query("select * from rf.clients");
+$lr = $db->query("select first_name, last_name from rf.clients order by id desc limit 1");
+$l = $lr->fetch_assoc();
+$num_results = $result->num_rows;
+echo '<br><br>';
+echo '<status id = "u"> Current User: '.$_SESSION['login_user'];
+echo '</status>';
+echo '<br><br>';
+echo '<status id = "n"> No. Of Clients: '.($num_results-1);
+echo '</status>';
+echo '<br><br>';
+echo '<status id = "l"> Latest Client: '.$l['first_name'].' '.$l['last_name'];
+echo '</status>';
+echo '<br><br>';
+echo '<status id = "q"> No. Of Defaulters: ';
+echo '</status>';
+echo '<br><br>';
+echo '<status id = "g"> No. Of Good Clients: ';
+echo '</status>';
+echo '<br><br>';
+echo '<status id = "b"> No Of Bad Clients: ';
+echo '</status>';
+echo '<br><br>';
+echo '</center>';
+echo '</profile>';
+?>
